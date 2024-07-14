@@ -54,11 +54,11 @@ class RealSenseCamera:
             if key.char == 'c' and self.color_image is not None:
                 # image_name increases from image_index by 1 for each capture
                 global image_index
-                image_index += 1
                 # image_name is 'image_<image_index>.png', and image_index format as 4 digits
                 image_name = 'image_{}.png'.format(str(image_index).zfill(4))
                 cv2.imwrite(save_dir+'/'+image_name, self.color_image)
                 print('saved ' + image_name)
+                image_index += 1
             elif key.char == 'q':
                 self.running = False
                 self.stop_streaming()
