@@ -6,6 +6,7 @@ from sklearn.metrics import silhouette_score
 
 
 
+
 pc_path = '/home/mlx/GraspTTA/models/HO3D_Object_models/025_mug/resampled.npy'
 grasp_path='/home/mlx/contact_graspnet/generated_grasps/111.npz'
 
